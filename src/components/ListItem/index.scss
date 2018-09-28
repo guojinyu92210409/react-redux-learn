@@ -1,0 +1,89 @@
+.positionLi{
+    padding: 5px 15px 5px;
+    background: #fff;
+    border-bottom: 8px solid #f5f5f5;
+    .liTitle{
+        border-bottom: 1px solid #D8D8D8;
+        height: 50px;
+        line-height: 50px;
+        h3{
+            float: left;
+            font-size: 14px;
+            text-align: left;
+            color: #393939;
+            width: 80%;
+        }
+        p{
+            float: right;
+            font-size: 12px;
+            color: #909090;
+            
+        }
+    }
+    .liCon{
+        padding: 20px 0 15px;
+        overflow: hidden;
+        .item{
+            float: left;
+            width: 33.33%;
+            border-right: 1px solid #D8D8D8;
+            h3{
+                font-size: 11px;
+                color: #909090;
+                line-height: 16px;
+                text-align: center;
+            }
+            h2{
+                font-size: 14px;
+                color: #393939;
+                line-height: 16px;
+                text-align: center;
+                margin-top:6px;
+            }
+            &:last-of-type{
+                border:0;
+            }
+        }
+        .info{
+            margin-top: 16px;
+            height: 40px;
+            line-height: 40px;
+            background: #FAFAFA;
+            padding-left: 10px;
+            text-align: left;
+            font-size: 12px;
+            color: #A6A6A6;
+            float: left;
+            width: 100%;
+        }
+    }
+    .liBottom{
+        height: 35px;
+        margin-bottom:10px;
+        p{
+            border: 1px solid #D9D9D9;
+            border-radius: 3px;
+            float: left;
+            text-align: center;
+            height: 35px;
+            line-height: 35px;
+            font-size: 14px;
+            color: #909090;
+            width: 49%;
+            &.right{
+                margin-left: 2%;
+                border: 1px solid #1C82DE;
+                color: #1C82DE;
+            }
+        }
+    }
+    @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */
+        .liCon {
+            .item{
+                h2{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
