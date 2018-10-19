@@ -97,8 +97,6 @@ export default class BasePage extends Component {
    * @memberof BasePage
    */
   push(pathname, search,params) {
-    console.log(search)
-
     if (!this.props.history) {
       toast('当前页面没有history,请检查')
       return

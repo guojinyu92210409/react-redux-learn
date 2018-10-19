@@ -34,30 +34,33 @@ export class BackTitle extends Component {
     if (!isShowTitle()) {
       return <div />
     }
-
     return (
       <div>
         <div
           className={`title postion ${getPostionClassName()} ${getClassName(
             this.props
           )}`}>
-          <div
-            className={`back ${getBackClassName()}`}
-            onClick={() => {
-              if (this.props.back) {
-                this.props.back()
-              } else {
-                if (this.props.from && this.props.from == 'wx') {
-                  finishPage()
+          {
+            !this.props.noBack
+            ?<div
+              className={`back ${getBackClassName()}`}
+              onClick={() => {
+                if (this.props.back) {
+                  this.props.back()
                 } else {
-                  history.goBack()
+                  if (this.props.from && this.props.from == 'wx') {
+                    finishPage()
+                  } else {
+                    history.goBack()
+                  }
                 }
-              }
-            }}>
-            {/* <img src={this.props.isPosition?require(`../asset/title-back-white.png`):require(`../asset/title-back.png`)}/> */}
-            <span className={this.props.isPosition?"back-icon white":"back-icon"}></span>
-            <span>返回</span>
-          </div>
+              }}>
+              {/* <img src={this.props.isPosition?require(`../asset/title-back-white.png`):require(`../asset/title-back.png`)}/> */}
+              <span className={this.props.isPosition?"back-icon white":"back-icon"}></span>
+              <span>返回</span>
+            </div>
+            :null
+          }
           <div
             className={
               this.props.rightTitle ? 'titleName-hasRight' : 'titleName'

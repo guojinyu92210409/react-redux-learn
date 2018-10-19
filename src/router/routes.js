@@ -8,8 +8,11 @@ import {
 } from 'react-router-dom'
 import { history } from '../redux/configureStore'
 import {
+    ROUTE_INDEX,
     ROUTE_HOME,
-    ROUTE_DETAIL
+    ROUTE_LIST,
+    ROUTE_DETAIL,
+    ROUTE_SELECT
 } from './routeName'
 import Loadable from 'react-loadable'
 
@@ -45,8 +48,11 @@ const LoadAsyncRoute = (routeName, routeComponet, exact = true) => {
 }
 
 const routes=[
+    LoadAsyncRoute(ROUTE_INDEX, import('../views/home')),
     LoadAsyncRoute(ROUTE_HOME,import('../views/home')),
-    LoadAsyncRoute(ROUTE_DETAIL,import('../views/detail'))
+    LoadAsyncRoute(ROUTE_LIST, import('../views/list')),
+    LoadAsyncRoute(ROUTE_DETAIL,import('../views/detail')),
+    LoadAsyncRoute(ROUTE_SELECT, import('../views/select'))
 ]
 
 const Routes=()=>{

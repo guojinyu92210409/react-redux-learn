@@ -1,0 +1,19 @@
+.p_detail{
+    .itemBox{
+        .item{
+            text-align: center;
+            img{
+                vertical-align: middle;
+                display: inline-block;
+                float: left;
+            }
+            span{
+                font-size: 12px;
+                line-height: 20px;
+                vertical-align: middle;
+                display: inline-block;
+                float: left;
+            }
+        }
+    }
+}

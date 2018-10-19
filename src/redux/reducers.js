@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import homeRedux from '../views/home/redux'
+import listRedux from '../views/list/redux'
 
 //  所有reducers集合
 const rootReducers = combineReducers({
-  homeRedux
+  listRedux
 })
 
 export default rootReducers

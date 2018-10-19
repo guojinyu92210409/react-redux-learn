@@ -1,0 +1,56 @@
+.p_select{
+    .wayBox {
+        height: 50px;
+        position: relative;
+        line-height: 50px;
+        background: #fff;
+        h3 {
+        font-size: 14px;
+        color: #000;
+        text-align: left;
+        padding-left: 15px;
+        }
+        select {
+        width: 60%;
+        height: 50px;
+        position: absolute;
+        right: 30px;
+        top: 0;
+        display: block;
+        border: 0;
+        -webkit-appearance: none;
+        -webkit-tap-highlight-color: #fff;
+        outline: 0;
+        direction: rtl;
+        font-size: 12px;
+        color: #909090;
+        background: #fff;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: left;
+        option {
+            direction: rtl;
+        }
+        }
+        p {
+        position: absolute;
+        right: 30px;
+        top: 0;
+        font-size: 12px;
+        color: #909090;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        text-align: right;
+        width: 60%;
+        }
+        img {
+        position: absolute;
+        right: 16px;
+        top: 19px;
+        width: 6px;
+        height: 12px;
+        }
+    }
+}
